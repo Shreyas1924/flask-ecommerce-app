@@ -1,15 +1,21 @@
 # Flask E-Commerce Web Application
 
+A full-stack **E-Commerce web application** built using **Python Flask, SQLite, and SQLAlchemy**.
+This project demonstrates core backend development concepts including **database integration, session-based cart management, user authentication, and order processing**.
+
+---
+
 ## Author
 
-Shreyas S D
+**Shreyas S D**
+
+---
 
 ## Project Overview
 
-This project is a full-stack E-Commerce web application built using Python Flask and SQLite.
-The system allows users to browse products, add items to a cart, manage quantities, place orders, and view order history.
+This project implements the basic functionality of an online shopping platform. Users can browse products, add items to a shopping cart, manage product quantities, checkout, and view order history. The application also includes a simple admin feature to add products.
 
-The application demonstrates backend web development concepts including database integration, session management, and user authentication.
+The goal of this project is to demonstrate how a backend-driven web application works using **Flask and relational databases**.
 
 ---
 
@@ -25,6 +31,7 @@ The application demonstrates backend web development concepts including database
 * View order history
 * User registration
 * User login and logout
+* Session-based cart management
 
 ### Admin Features
 
@@ -51,7 +58,7 @@ The application demonstrates backend web development concepts including database
 
 ---
 
-## Project Workflow
+## Application Workflow
 
 Products → Cart → Checkout → Order stored in database → Order history
 
@@ -61,55 +68,88 @@ Products → Cart → Checkout → Order stored in database → Order history
 
 Clone the repository:
 
+```bash
 git clone https://github.com/Shreyas1924/flask-ecommerce-app.git
+```
 
 Navigate to the project folder:
 
+```bash
 cd flask-ecommerce-app
+```
 
-Create virtual environment:
+Create a virtual environment:
 
+```bash
 python -m venv venv
+```
 
-Activate virtual environment:
+Activate the virtual environment (Windows):
 
-Windows:
+```bash
 venv\Scripts\activate
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run the application:
 
+```bash
 python app.py
+```
 
 Open the application in your browser:
 
+```
 http://127.0.0.1:5000
-
----
-
-## Future Improvements
-
-* Product images
-* Product search
-* Admin edit/delete products
-* Payment gateway integration
-* Better UI design
+```
 
 ---
 
 ## Project Structure
 
-app.py – Main Flask application
-models.py – Database models
-templates/ – HTML templates
-requirements.txt – Project dependencies
-.gitignore – Files ignored by Git
+```
+flask-ecommerce-app
+│
+├── app.py                 # Main Flask application
+├── models.py              # Database models
+├── requirements.txt       # Project dependencies
+├── .gitignore             # Git ignored files
+│
+├── templates/             # HTML templates
+│   ├── base.html
+│   ├── home.html
+│   ├── products.html
+│   ├── cart.html
+│   ├── login.html
+│   ├── register.html
+│   ├── add_product.html
+│   ├── orders.html
+│   └── checkout_success.html
+│
+└── instance/
+    └── store.db           # SQLite database
+```
+
+---
+
+## Future Improvements
+
+Planned improvements for the project include:
+
+* Product images
+* Product search functionality
+* Admin product edit and delete features
+* Payment gateway integration
+* Improved UI design
+* Order tracking system
 
 ---
 
 ## License
 
-This project is for educational and learning purposes.
+This project is created for **educational and learning purposes**.
